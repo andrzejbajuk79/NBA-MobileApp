@@ -1,4 +1,4 @@
-import style from '../../../../styles/side-nav/sideNav.css'
+import style from '../sideNav.module.css'
 
 export const items = [
  {
