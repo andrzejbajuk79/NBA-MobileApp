@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './_slider.module.css';
 import { Link } from 'react-router-dom';
 import Slick from 'react-slick';
-import {renderedNews} from './renderNews'
+
 
 
 const SliderTemplate = (props) => {
@@ -21,7 +21,21 @@ const SliderTemplate = (props) => {
 
  switch (props.type) {
   case ('featured'):
-   template = props.data.map((item, i) => renderedNews(item, i) )
+   template = props.data.map((item, i) =>( 
+    //  renderedNews(item, i) 
+    <div key={i}>
+    <div className={styles.featured_item}>
+     <div className={styles.featured_image}
+      style={{
+       background: `url(../images/articles/${item.image})`
+      }}></div>
+     <Link to={`/articles/${item.id}`}>
+      <div className={styles.featured_caption}>
+       {item.title}</div>
+     </Link>
+    </div>
+   </div>
+     ))
    break;
 
   default:
