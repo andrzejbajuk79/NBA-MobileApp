@@ -23,13 +23,14 @@ const Header = (props) => {
 
     const logo = () => (
         <Link to="/" className='header'>
-            <img alt="nba logo" src="/images/nba_logo.png"/>
+            <img alt="logo" src="/images/logo.png"/>
         </Link>
     )
     
     // sidenav dostaje propsy w layoucie
     return (
         <header className='main'>
+        
         <SideNav {...props}/>
             <div className='headerOpt'>
                 {navBars()}

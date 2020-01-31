@@ -19,11 +19,12 @@ class Layout extends Component {
      onHideNav={() => this.togglesSideNav(false)} //callback do zamykania
      onOpenNav={() => this.togglesSideNav(true)} //callback do otwierania
     />
-    {this.props.children}
+  {this.props.children} 
     <Footer />
    </div>
   )
  }
 }
-
+// {this.props.children}  w routes.js  to sa wszystkie podstrony
+//  plus header i footer na sztywno to tworzy layout
 export default Layout
