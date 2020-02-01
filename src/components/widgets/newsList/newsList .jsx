@@ -60,23 +60,13 @@ class NewsList extends Component {
                     <CardInfo 
                     date={item.date}
                     team={item.team}
-                    teams={this.state.teams}/>
+                    teams={teams}/>
                     <h2>{item.title}</h2>
                   </Link>
                 </div>
               </div>
             </CSSTransition>
           )
-
-
-
-          // (item, i) => <RenderedNewsList
-          // key={i}
-          //  item={item}
-          //  teams={teams}
-          //  team={item.team}
-          //  date={item.date}
-          //  />
            )
         break;
       default:
