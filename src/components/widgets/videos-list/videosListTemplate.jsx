@@ -5,7 +5,7 @@ import CardInfo from '../card-info/cardInfo';
 
 
  const VideosListTemplate = (props) => {
-  console.log('template',props);
+
   
   return props.data.map((item, i) => (
    <Link to={`/videos/${item.id}`} key={i}>
