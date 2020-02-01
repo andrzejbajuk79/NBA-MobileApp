@@ -36,7 +36,6 @@ class VideoArticle extends Component {
    })
  }
  render() {
-  console.log('dddd',this.state.related);
   const { team, article } = this.state
   return (
    <div>

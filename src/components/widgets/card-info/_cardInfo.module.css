@@ -7,8 +7,10 @@
  margin-right:5px;
  }
 .teamName{
+ font-style: italic;
+ font-size: 15px;
 margin-right: 7px;
-background:#8f6363;
+background:#a39f9f;
 color:#fff;
 padding:5px;
 }

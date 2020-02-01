@@ -5,7 +5,6 @@ import TeamInfo from './../../elements/teamInfo';
   const teamInfo = (team) => team && <TeamInfo team={team} />
  return (
   <div>
-  kkk
    {teamInfo(props.teamData)}
   </div>
  )
