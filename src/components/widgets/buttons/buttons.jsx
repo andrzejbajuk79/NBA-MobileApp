@@ -9,7 +9,7 @@ const Button = (props) => {
    template = (
     <div
      className={styles.blue_btn}
-     onClick={props.loadMore}
+     onClick={props.loadmore}
     >
      {props.action}
     </div>
